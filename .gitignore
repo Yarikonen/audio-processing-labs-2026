@@ -1,1 +1,59 @@
+# ── Virtual environment ────────────────────────────────────────────────────────
 .venv/
+
+# ── Python artifacts ───────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# ── Large binary files ─────────────────────────────────────────────────────────
+# Model checkpoints (400 MB+ each)
+*.pth
+# Phoneme cache arrays
+*.npy
+# Synthesised / raw audio
+*.wav
+# Windows compiled binaries
+*.exe
+*.obj
+
+# ── Raw audio datasets (too large for git) ────────────────────────────────────
+audio/lab3_data/
+audio/lab2_data/
+
+# ── Synthesised audio output (regenerable from notebook) ──────────────────────
+src/audio/lab3_results/tacotron2/
+src/audio/lab3_results/vits/
+src/audio/lab3_results/finetuned_cfg1/
+src/audio/lab3_results/finetuned_cfg2/
+src/audio/lab3_results/vits_ruslan_synth/
+src/audio/lab3_results/vits_ruslan_listen/
+src/audio/lab3_results/xtts_ru_compare/
+src/audio/lab3_results/vits_ru_compare/
+src/audio/lab3_results/comparison/
+
+# ── Phoneme cache (regenerable) ───────────────────────────────────────────────
+src/audio/lab3_results/vits_ruslan_scratch/phoneme_cache_ru/
+
+# ── TensorBoard event files are NOT excluded ──────────────────────────────────
+# events.out.tfevents.*, config.json, trainer_0_log.txt are committed
+# so "tensorboard --logdir src/audio/lab3_results/vits_ruslan_scratch" works on another PC
+
+# ── Training stdout logs (duplicated in trainer_0_log.txt inside each run dir) ─
+training_ruslan_*.log
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+lab3_tts.ipynb
+make_lab3_train.py
+make_lab3.py
+start_training.ps1
+make_lab3.py
+src/audio/lab3_results/vits_ruslan_scratch/vits_ruslan_scratch-*/
+# RAR archive with TensorBoard logs (too large for git, share manually)
+vits_ruslan_tb_logs.rar

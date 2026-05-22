@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from TTS.api import TTS; models = TTS.list_models\\(\\); en_models = [m for m in models if '/en/' in m]; print\\('\\\\n'.join\\(en_models[:30]\\)\\)\" 2>$null)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from TTS.api import TTS; models = TTS.list_models\\(\\); en_models = [m for m in models if '/en/' in m]; print\\(chr\\(10\\).join\\(en_models[:30]\\)\\)\")",
+      "PowerShell(tail *)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\pip.exe\" install torchaudio --index-url https://download.pytorch.org/whl/cu130 2>&1 | Select-Object -Last 10)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from TTS.api import TTS; models = TTS.list_models\\(\\); en_models = [m for m in models if '/en/' in m]; print\\(chr\\(10\\).join\\(en_models[:40]\\)\\)\" 2>&1 | Select-Object -Last 40)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\pip.exe\" show pandas numpy 2>&1)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\pip.exe\" install \"pandas>=2.0\" 2>&1 | Select-Object -Last 5)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from TTS.api import TTS; models = TTS.list_models\\(\\); en_models = [m for m in models if '/en/' in m]; print\\(chr\\(10\\).join\\(en_models[:40]\\)\\)\" 2>&1)",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from TTS.api import TTS; tts = TTS\\(\\); models = tts.list_models\\(\\); en_models = [m for m in models if '/en/' in m]; print\\(chr\\(10\\).join\\(en_models[:40]\\)\\)\")",
+      "PowerShell(& \"F:\\\\projects\\\\audio-processing-labs-2026\\\\.venv\\\\Scripts\\\\pip.exe\" list 2>$null)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(winget install *)",
+      "PowerShell(winget search *)",
+      "Bash(.venv\\\\Scripts\\\\python.exe make_lab3.py)",
+      "PowerShell(Get-Content *)",
+      "Bash(Get-Content *)",
+      "Bash(python3 *)",
+      "Bash(..venvScriptspython.exe -c ' *)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe _inspect_nb.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe _inspect_nb2.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe _inspect_nb3.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe _patch_lab2.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe _verify_nb.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe make_lab3.py)",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; python _split_make.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; python make_lab3.py)",
+      "PowerShell(cd \"F:\\\\projects\\\\audio-processing-labs-2026\"; $env:PYTHONIOENCODING = \"utf-8\"; .\\\\.venv\\\\Scripts\\\\python.exe make_lab3.py; if \\($?\\) { .\\\\.venv\\\\Scripts\\\\python.exe make_lab3_train.py })",
+      "Bash(git add *)",
+      "Bash(git check-ignore *)",
+      "Bash(where rar *)",
+      "Bash(where winrar *)",
+      "Read(//c/Program Files/WinRAR/**)",
+      "Bash(where \"C:/Program Files/WinRAR/Rar.exe\")"
+    ]
+  }
+}
